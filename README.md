@@ -1,6 +1,6 @@
 <h1 align="center">komimoe/Hikari</h1>
-<h2 align="center">曾用名: Arkari (我一直在哭, 请给我点小星星, 我无法停止哭泣) </h2>
-<h3 align="center">Former name: Arkari (I've been crying, please give me a star, I can't stop crying)</h3>
+<h2 align="center">曾用名: Arkari</h2>
+<h3 align="center">Formerly Known As: Arkari</h3>
 
 <h3 align="center">
   <a href="https://discord.gg/f5nDYjsrKZ">
@@ -10,21 +10,21 @@
 
 <p align="center">
  <a href="https://github.com/KomiMoe/Hikari/issues">
-  <img src="https://img.shields.io/github/issues/KomiMoe/Hikari?a=a"/> 
+  <img src="https://img.shields.io/github/issues/komimoe/Hikari?colorA=363a4f&colorB=e6b2cc&style=for-the-badge"/> 
  </a>
  <a href="https://github.com/KomiMoe/Hikari/network/members">
-  <img src="https://img.shields.io/github/forks/KomiMoe/Hikari?a=a"/> 
+  <img src="https://img.shields.io/github/forks/komimoe/Hikari?colorA=363a4f&colorB=e6b2cc&style=for-the-badge"/> 
  </a>  
  <a href="https://github.com/KomiMoe/Hikari/stargazers">
-  <img src="https://img.shields.io/github/stars/KomiMoe/Hikari?a=a"/> 
+  <img src="https://img.shields.io/github/stars/komimoe/Hikari?colorA=363a4f&colorB=e6b2cc&style=for-the-badge"/> 
  </a>
  <a href="https://github.com/KomiMoe/Hikari/LICENSE">
-  <img src="https://img.shields.io/github/license/KomiMoe/Hikari?a=a"/> 
+  <img src="https://img.shields.io/github/license/komimoe/Hikari?colorA=363a4f&colorB=e6b2cc&style=for-the-badge"/> 
  </a>
 </p>
 <p align="center">
  <a href="./README_en.md">
-  <img src="https://img.shields.io/badge/README-English-blue.svg" alt="Read in English"/>
+  <img src="https://img.shields.io/badge/README-English-blue.svg?colorA=161b1d&colorB=20afdf&style=for-the-badge" alt="Read in English"/>
  </a>
 </p>
 <h3 align="center">Yet another llvm based obfuscator based on goron</h3>
@@ -258,17 +258,6 @@ Thanks to [JetBrains](https://www.jetbrains.com/?from=KomiMoe) for providing fre
 + [Goron](https://github.com/amimo/goron)
 + [Hikari](https://github.com/HikariObfuscator/Hikari)
 + [ollvm](https://github.com/obfuscator-llvm/obfuscator)
-
-## 我会永远视奸你们
-
-我很可爱，请给我打钱：
-
-- **ETH**: `0x24dfF9acA645393411C0dfff75d9166676741C12`
-- **BTC**: `1ma7oumgyPfu5v1sSeHBK71WyhKY9vroB`
-- **USDT(TRC20)**: `TJ5SnHvRmiaoVzWVSZPAuMdsUwEMnLxmLP`
-
-站街售卖自己，白菜价出租自己
-我就是阴暗b
 
 ## License
 本项目采用 混合协议 开源，因此使用本项目时，你需要注意以下几点：

@@ -1,5 +1,5 @@
 <h1 align="center">komimoe/Hikari</h1>
-<h2 align="center">Formerly Known As: Arkari (Please give me stars and support) </h2>
+<h2 align="center">Formerly Known As: Arkari (Please give me stars) </h2>
 
 <h3 align="center">
   <a href="https://discord.gg/f5nDYjsrKZ">
@@ -9,16 +9,16 @@
 
 <p align="center">
  <a href="https://github.com/KomiMoe/Hikari/issues">
-  <img src="https://img.shields.io/github/issues/KomiMoe/Hikari?a=a"/> 
+  <img src="https://img.shields.io/github/issues/komimoe/Hikari?colorA=363a4f&colorB=e6b2cc&style=for-the-badge"/> 
  </a>
  <a href="https://github.com/KomiMoe/Hikari/network/members">
-  <img src="https://img.shields.io/github/forks/KomiMoe/Hikari?a=a"/> 
+  <img src="https://img.shields.io/github/forks/komimoe/Hikari?colorA=363a4f&colorB=e6b2cc&style=for-the-badge"/> 
  </a>  
  <a href="https://github.com/KomiMoe/Hikari/stargazers">
-  <img src="https://img.shields.io/github/stars/KomiMoe/Hikari?a=a"/> 
+  <img src="https://img.shields.io/github/stars/komimoe/Hikari?colorA=363a4f&colorB=e6b2cc&style=for-the-badge"/> 
  </a>
  <a href="https://github.com/KomiMoe/Hikari/LICENSE">
-  <img src="https://img.shields.io/github/license/KomiMoe/Hikari?a=a"/> 
+  <img src="https://img.shields.io/github/license/komimoe/Hikari?colorA=363a4f&colorB=e6b2cc&style=for-the-badge"/> 
  </a>
 </p>
 <h3 align="center">Yet another LLVM-based obfuscator based on Goron</h3>
