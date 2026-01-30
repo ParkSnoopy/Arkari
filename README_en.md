@@ -184,7 +184,7 @@ E.g., indirect function calls with encrypted target function addresses, intensit
 ## Manage Obfuscation Parameters via Configuration File
 (Win64-MT-20.1.7-obf1.7.0 or later)
 
-Add to compilation parameters: `-mllvm -hikari-cfg="Configuration file path|Your config path"`
+Add to compilation parameters: `-mllvm -samsara-cfg="Configuration file path|Your config path"`
 
 The path can be absolute or relative to the compiler's working directory.
 
@@ -254,4 +254,4 @@ This project is open-sourced under a mixed license, so please note the following
 2. This project has obtained partial project authorization and is not subject to certain constraints.
 3. The remaining logic code of the project adopts the [license of this repository](./LICENSE).
 
-**This repository is solely for enhancing users' ability to protect their code by implementing code logic obfuscation and encryption. Unauthorized development based on KomiMoe/Hikari code is prohibited without the repository owner's permission. Please comply with local laws and regulations when using this project. Any issues arising from usage are the responsibility of the user and those providing tutorials for improper use.**
+**This repository is solely for enhancing users' ability to protect their code by implementing code logic obfuscation and encryption. Unauthorized development based on KomiMoe/Samsara code is prohibited without the repository owner's permission. Please comply with local laws and regulations when using this project. Any issues arising from usage are the responsibility of the user and those providing tutorials for improper use.**
