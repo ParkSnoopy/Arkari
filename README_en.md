@@ -1,5 +1,5 @@
-<h1 align="center">komimoe/Hikari</h1>
-<h2 align="center">Formerly Known As: Arkari (Please give me stars) </h2>
+<h1 align="center">Samsara</h1>
+<h2 align="center">Formerly Known As: Arkari/Hikari </h2>
 
 <h3 align="center">
   <a href="https://discord.gg/f5nDYjsrKZ">
@@ -8,17 +8,17 @@
 </h3>
 
 <p align="center">
- <a href="https://github.com/KomiMoe/Hikari/issues">
-  <img src="https://img.shields.io/github/issues/komimoe/Hikari?colorA=363a4f&colorB=e6b2cc&style=for-the-badge"/> 
+ <a href="https://github.com/komimoe/Samsara/issues">
+  <img src="https://img.shields.io/github/issues/komimoe/samsara?colorA=363a4f&colorB=e6b2cc&style=for-the-badge"/> 
  </a>
- <a href="https://github.com/KomiMoe/Hikari/network/members">
-  <img src="https://img.shields.io/github/forks/komimoe/Hikari?colorA=363a4f&colorB=e6b2cc&style=for-the-badge"/> 
+ <a href="https://github.com/komimoe/Samsara/network/members">
+  <img src="https://img.shields.io/github/forks/komimoe/samsara?colorA=363a4f&colorB=e6b2cc&style=for-the-badge"/> 
  </a>  
- <a href="https://github.com/KomiMoe/Hikari/stargazers">
-  <img src="https://img.shields.io/github/stars/komimoe/Hikari?colorA=363a4f&colorB=e6b2cc&style=for-the-badge"/> 
+ <a href="https://github.com/komimoe/Samsara/stargazers">
+  <img src="https://img.shields.io/github/stars/komimoe/samsara?colorA=363a4f&colorB=e6b2cc&style=for-the-badge"/> 
  </a>
- <a href="https://github.com/KomiMoe/Hikari/LICENSE">
-  <img src="https://img.shields.io/github/license/komimoe/Hikari?colorA=363a4f&colorB=e6b2cc&style=for-the-badge"/> 
+ <a href="https://github.com/komimoe/Samsara/LICENSE">
+  <img src="https://img.shields.io/github/license/komimoe/samsara?colorA=363a4f&colorB=e6b2cc&style=for-the-badge"/> 
  </a>
 </p>
 <h3 align="center">Yet another LLVM-based obfuscator based on Goron</h3>
@@ -35,7 +35,7 @@ Currently supported features:
  - Floating-point constant encryption (`-mllvm -irobf-cfe`) (Win64-MT-19.1.3-obf1.6.0 or later)
  - Microsoft CXXABI RTTI Name Eraser (Experimental feature!) [Requires specifying configuration file path and `randomSeed` field in the configuration file (32 bytes, padded with 0 if shorter, truncated if longer)] (`-mllvm -irobf-rtti`) (Win64-MT-20.1.7-obf1.7.0 or later)
  - All features (`-mllvm -irobf-indbr -mllvm -irobf-icall -mllvm -irobf-indgv -mllvm -irobf-cse -mllvm -irobf-cff -mllvm -irobf-cie -mllvm -irobf-cfe -mllvm -irobf-rtti`)
- - Or manage directly via configuration file (`-mllvm -hikari-cfg="Configuration file path|Your config path"`) (Win64-MT-20.1.7-obf1.7.0 or later)
+ - Or manage directly via configuration file (`-mllvm -samsara-cfg="Configuration file path|Your config path"`) (Win64-MT-20.1.7-obf1.7.0 or later)
 
 Improvements over Goron:
  - As the original author has explicitly stated that they will not update the LLVM version or continue development for the time being (at least for tens of thousands of years), this version was created (https://github.com/amimo/goron/issues/29)
