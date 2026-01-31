@@ -234,11 +234,11 @@ Thanks to [JetBrains](https://www.jetbrains.com/?from=KomiMoe) for providing fre
 
 ## Star History
 
-<a href="https://www.star-history.com/#KomiMoe/Hikari&Date">
+<a href="https://www.star-history.com/#KomiMoe/Samsara&Date">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=KomiMoe/Hikari&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=KomiMoe/Hikari&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=KomiMoe/Hikari&type=Date" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=KomiMoe/Samsara&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=KomiMoe/Samsara&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=KomiMoe/Samsara&type=Date" />
  </picture>
 </a>
 

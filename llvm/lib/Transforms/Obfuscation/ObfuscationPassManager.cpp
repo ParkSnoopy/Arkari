@@ -87,8 +87,8 @@ EnableRttiEraser("irobf-rtti", cl::init(false), cl::NotHidden,
 
 
 static cl::opt<std::string>
-HikariConfigPath("hikari-cfg", cl::init(std::string{}), cl::NotHidden,
-                 cl::desc("Hikari config path."),
+SamsaraConfigPath("samsara-cfg", cl::init(std::string{}), cl::NotHidden,
+                 cl::desc("Samsara config path."),
                  cl::ZeroOrMore);
 
 namespace llvm {
@@ -149,7 +149,7 @@ struct ObfuscationPassManager : public ModulePass {
   }
 
   static std::shared_ptr<ObfuscationOptions> getOptions() {
-    auto Opt = ObfuscationOptions::readConfigFile(HikariConfigPath);
+    auto Opt = ObfuscationOptions::readConfigFile(SamsaraConfigPath);
 
     Opt->indBrOpt()->readOpt(EnableIndirectBr, LevelIndirectBr);
     Opt->iCallOpt()->readOpt(EnableIndirectCall, LevelIndirectCall);
@@ -169,7 +169,7 @@ struct ObfuscationPassManager : public ModulePass {
     if (EnableIndirectBr || EnableIndirectCall || EnableIndirectGV ||
         EnableIRFlattening || EnableIRStringEncryption ||
         EnableIRConstantIntEncryption || EnableIRConstantFPEncryption ||
-        EnableRttiEraser || !HikariConfigPath.empty()) {
+        EnableRttiEraser || !SamsaraConfigPath.empty()) {
       EnableIRObfuscation = true;
     }
 
