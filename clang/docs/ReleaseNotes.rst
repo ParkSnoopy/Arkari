@@ -655,6 +655,7 @@ Bug Fixes to C++ Support
 - Fixed a crash when parsing the ``enable_if`` attribute on C function declarations with identifier-list parameters. (#GH173826)
 - Fixed an assertion failure triggered by nested lambdas during capture handling. (#GH172814)
 - Fixed an assertion failure in vector conversions involving instantiation-dependent template expressions. (#GH173347)
+- Fixed an issue where recursive instantiation could lead to escape of SFINAE errors. (#GH179118)
 - Fixed an assertion failure in floating conversion narrowing caused by C++ constant expression checks in C23 mode. (#GH173847)
 
 Bug Fixes to AST Handling
@@ -912,13 +913,35 @@ Crash and bug fixes
   checked arithmetic builtin functions. (#GH173795)
 - Fixed a crash introduced in clang-20 when analyzing some "swap" functions.
   (#GH178797)
+- Fixed a crash introduced in clang-20 in the ``unix.Malloc`` checker when
+  analyzing functions that had both of the ``ownership_returns`` and
+  ``ownership_takes`` attributes. (#GH183344)
 
 Improvements
 ^^^^^^^^^^^^
 
-- The `expand-macros <https://clang.llvm.org/docs/analyzer/user-docs/Options.html#expand-macros>`__
+.. |ss| raw:: html
+
+   <strike>
+
+.. |se| raw:: html
+
+   </strike>
+
+.. |br| raw:: html
+
+   <br />
+
+- |ss| The `expand-macros <https://clang.llvm.org/docs/analyzer/user-docs/Options.html#expand-macros>`__
   analyzer config option now formats the macro expansions using LLVM-style
-  clang-format. (#GH154743)
+  clang-format. (#GH154743) |se| |br|
+  **EDIT:** This feature was later reverted from upstream LLVM (#GH186614), and
+  it's currently not planned to land again due to the library dependencies it
+  would need. We didn't revert this change from the release branch for ABI
+  compatibility reasons. We are sorry for the inconvinience.
+  Read more about this in the relevant
+  `LLVM Discourse thread <https://discourse.llvm.org/t/can-we-link-clang-format-into-clanganalysis/89014/7>`__.
+
 - ``[[clang::suppress]]`` now can suppress diagnostics within primary templates.
   (#GH168954)
 - Improved the false-positive suppression for ``std::unique_ptr`` and
