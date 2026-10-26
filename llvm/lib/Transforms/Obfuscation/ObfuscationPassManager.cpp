@@ -154,6 +154,7 @@ struct ObfuscationPassManager : public ModulePass {
 
   bool runOnModule(Module &M) override {
 
+    bool Changed = rewriteRustFingerprintStrings(M);
     if (EnableIndirectBr || EnableIndirectCall || EnableIndirectGV ||
         EnableIRFlattening || EnableIRStringEncryption ||
         EnableIRConstantIntEncryption || EnableIRConstantFPEncryption ||
@@ -162,7 +163,7 @@ struct ObfuscationPassManager : public ModulePass {
     }
 
     if (!EnableIRObfuscation) {
-      return false;
+      return Changed;
     }
 
     const auto Options(getOptions());
@@ -172,13 +173,14 @@ struct ObfuscationPassManager : public ModulePass {
 
     add(llvm::createConstantIntEncryptionPass(Options.get()));
 
-    add(llvm::createIndirectGlobalVariablePass(Options.get()));
-
     add(llvm::createConstantFPEncryptionPass(Options.get()));
 
     if (EnableIRStringEncryption || Options->cseOpt()->isEnabled()) {
       add(llvm::createStringEncryptionPass(Options.get()));
     }
+
+    // Encrypt strings before their uses are hidden behind global indirection.
+    add(llvm::createIndirectGlobalVariablePass(Options.get()));
 
     add(llvm::createIndirectCallPass(Options.get()));
     add(llvm::createFlatteningPass(pointerSize, Options.get()));
@@ -187,7 +189,7 @@ struct ObfuscationPassManager : public ModulePass {
     if (EnableRttiEraser || Options->rttiOpt()->isEnabled()) {
       add(llvm::createMsRttiEraserPass(Options.get()));
     }
-    bool Changed = run(M);
+    Changed |= run(M);
 
     return Changed;
   }
