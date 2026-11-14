@@ -63,6 +63,7 @@
 - 间接全局变量引用,并加密变量地址(`-mllvm -irobf-indgv`)
 - 字符串(c string)加密功能(`-mllvm -irobf-cse`)
 - 过程相关控制流平坦混淆(`-mllvm -irobf-fla`)
+- `--irobf-dummy` : Randomized, bounded compute kernels on never-taken branches (`--level-dummy` accepts 0-3; default 0)  
 - 整数常量加密(`-mllvm -irobf-cie`) (Win64-MT-19.1.3-obf1.6.0 or later)
 - 浮点常量加密(`-mllvm -irobf-cfe`) (Win64-MT-19.1.3-obf1.6.0 or later)
 - Microsoft CXXABI RTTI Name 擦除器 (实验性功能!) [需要指定配置文件路径 以及 配置文件`randomSeed`字段(32字节，不足会在后面补0，超过会截断)] (`-mllvm -irobf-rtti`) (Win64-MT-20.1.7-obf1.7.0 or later)
